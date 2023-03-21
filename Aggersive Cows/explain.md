@@ -72,6 +72,14 @@ Complete the function int solve(), which takes integer n, k, and a vector stalls
 
 0 <= stalls[i] <= 10^9
 
+## Logic:
+
+We need to define a isPossible() function that checks if a distance x is possible between each of the cows. We can use a greedy approach here by placing cows at the leftmost possible stalls such that they are at least x distance away from the last-placed cow.
+
+We need to sort the given array/list so once we have our sorted array to do the greedy task then we can apply the Binary Search algorithm on the sorted input, and use our function isPossible( ) to find the largest distance possible.
+
+
+
 # Explain
 
 **Step- 1** First, the isPossible() function is defined as a private member function of the Solution class. This function takes in three arguments: a reference to a vector of integers stalls, an integer k representing the number of cows to be placed, and an integer mid representing the minimum distance between any two cows.
@@ -109,3 +117,10 @@ Complete the function int solve(), which takes integer n, k, and a vector stalls
 **Step- 17** At the end of each iteration, mid is updated to the midpoint between s and e.
 
 **Step- 18** AWhen the while loop completes, the ans variable represents the minimum distance between any two cows that can be achieved. This value is returned by the solve() function.
+
+![image](https://user-images.githubusercontent.com/106008744/226538881-59e3b312-116d-4e1e-8a9b-e688432dd8dc.png)
+
+![image](https://user-images.githubusercontent.com/106008744/226538957-6e415227-43f8-4f93-9dc6-ee092084c018.png)
+
+[Full Explain](https://leetcode.com/discuss/general-discussion/1302335/aggressive-cows-spoj-fully-explained-c)
+
