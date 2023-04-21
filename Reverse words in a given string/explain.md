@@ -135,4 +135,4 @@ Use a while loop to iterate over the characters of s from the first character (i
 
 At the end of the loop, ans will contain the last word in the input string without a trailing dot.
 
-    For example, if the input string is "i.like.this.program", this block of code will append the word "program" to ans. At the end of the loop, ans will contain "much.very.program", which is the reversed string with each word reversed and separated by dots.
+#### For example, if the input string is "i.like.this.program", this block of code will append the word "program" to ans. At the end of the loop, ans will contain "much.very.program", which is the reversed string with each word reversed and separated by dots.
